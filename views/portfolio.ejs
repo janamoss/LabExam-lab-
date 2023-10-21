@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+        body {
+        font-family: 'Kanit', sans-serif;
+  color: #000;
+  background-color: rgb(206, 206, 206);
+}
+
+header {
+  background-color: #3ab33a;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+nav {
+  background-color: #3ab33a;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+nav li a:hover {
+  background-color: #f0f0f0;
+}
+
+div {
+  padding: 1rem 2rem;
+}
+
+#Group1 {
+  background-color: #fff;
+  color: #000;
+}
+
+#Group2 {
+  background-color: #fff;
+  color: #000;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  color: #008000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <% if (ports.length>0) {%>
+            <% ports.forEach(p => { %>
+            <h1><%= p.name %></h1>
+            <% })  %>
+        <% } else {%>
+            <h1>Noting</h1>
+        <%}%>
+        <h3>Student Portfolio</h3>
+    </header>
+    <%- include('./Partials/nav.ejs') %>    
+    <div id="Group1">
+        <p>I am a passionate and dedicated
+            Computing and Digital Technologies student currently pursuing my bachelor's
+            degree at Khon Kaen University. I have a strong interest in web development
+            and programming.</p>
+    </div>
+    <div id="Group2">
+        <% if (ports.length>0) {%>
+            <% ports.forEach(p => { %>
+                <p>
+                    You can reach me at <a href="mailto:<%= p.contact.email%>"><%= p.contact.email%></a> Feel free to connect with me on <a href="<%= p.contact.linkedin%>">linkedin</a> as well.
+                </p>
+            <% })  %>
+        <% } %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Mooli&display=swap');
+body {
+    background-color: #efffe6;
+    color: #333;
+    font-family: 'Mooli', sans-serif;
+  }
+  
+  h1, h2 {
+    color: #669966;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+  
+  .pj, .ed {
+    background-color: #99CC99;
+    border: 1px solid #669966;
+    padding: 10px;
+  }
+
+/* nav */
+nav {
+    background-color: #3ab33a;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  nav li a:hover {
+    background-color: #f0f0f0;
+  }
+
+  #Group1 {
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  #Group1 img {
+    border-radius: 50%;
+    border: 5px solid #99CC99;
+  }
+
+  #Group2 , #Group3 {
+    padding: 5px;
+    border-radius: 2em;
+    background-color: #ffffff
+  }
+
+  #Group3 {
+    margin-top: 4em;
+  }
+
+  #Group2 h2 , #Group3 h2  {
+    font-size: xx-large;
+  }
+
+  .pj {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: table;
+    width: 80%;
+    table-layout: fixed;
+  
+    td {
+      border: none;
+      padding: 5px;
+    }
+  
+    .pj-name {
+      font-weight: bold;
+    }
+  
+    .pj-detail {
+      text-align: center;
+    }
+  }
+
+  
+  .ed {
+    display: list-item;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    list-style-type: none;
+  
+    li {
+      margin: 0;
+      padding: 5px;
+    }
+  
+    .ed-name {
+      font-weight: bold;
+    }
+  
+    .ed-detail {
+      text-align: center;
+    }
+  }
+
+  
